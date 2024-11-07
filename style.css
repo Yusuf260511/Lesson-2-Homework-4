@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.header-nav {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #2B3844;
+    box-shadow: 0px 2px 4px 0px #0000000E;
+    padding: 23px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav_h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.74px;
+}
+
+.header-nav_h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.82px
+}
+
+/* ===================================================================================================== */
+
+.main {
+    max-width: 2440px;
+    min-height: 944px;
+    background-color: #202C36;
+    padding: 48px 80px 131px 80px;
+}
+
+input {
+    max-width: 480px;
+    min-height: 56px;
+    border-radius: 5px;
+    background-color: #2B3844;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+    border: none;
+    color: white;
+    padding: 19px 270px 19px 74px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background-image: url(img/search\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 7%;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.main-dives {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.main-dives_div {
+    width: 264px;
+    height: 250px;
+    background-color: #2B3844;
+    box-shadow: 0px 0px 7px 2px #00000008;
+    border-radius: 5px;
+    margin-bottom: 109px;
+}
+
+.flag {
+    width: 264px;
+    height: 160px;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        padding: 58px 33px 129px 33px;
+    }
+    input {
+        max-width: 768px;
+        height: 101px;
+    }
+}
+
+@media (max-width: 665px) {
+    .main {
+        padding: 24px 55px;
+        align-items: center;
+        justify-content: center;
+    }
+    input {
+        max-width: 254px;
+        height: 48px;
+        padding: 10px;
+    }
+}
